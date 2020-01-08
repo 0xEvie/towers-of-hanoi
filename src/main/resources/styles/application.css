@@ -1,0 +1,48 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+
+#vbox
+{
+	-fx-background-color: #000;
+}
+#root
+{
+	-fx-background-image: url("../images/tilebg.png");
+}
+
+#sky
+{
+	-fx-background-image: url("../images/sky.png");
+	-fx-background-repeat: stretch;  
+	-fx-background-size: 760 500;
+	-fx-background-position: bottom;
+
+}
+#pole1vis, #pole2vis, #pole3vis
+{
+	-fx-background-color:#333333;
+}
+
+#panel1, #panel2
+{
+	 -fx-background-image: url("../images/wood.png");
+	-fx-background-repeat: repeat-x;  
+	-fx-background-size: 256 256;
+}
+
+.button, #cb
+{
+    -fx-background-color: 
+        #c3c4c4,
+        linear-gradient(#d6d6d6 50%, white 100%),
+        radial-gradient(center 50% -40%, radius 200%, #e6e6e6 45%, rgba(230,230,230,0) 50%);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,1;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 );
+}
+
+#b1, #b2, #b3, #b4, #b5, #b6, #b7, #b8
+{
+	-fx-background-radius: 0;
+}

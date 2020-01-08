@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="root" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="444.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controllers.FXController">
+   <children>
+      <GridPane fx:id="sky" alignment="BOTTOM_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="300.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
+        <columnConstraints>
+          <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="40.0" prefWidth="40.0" />
+          <ColumnConstraints hgrow="NEVER" maxWidth="-Infinity" minWidth="200.0" prefWidth="200.0" />
+            <ColumnConstraints hgrow="NEVER" minWidth="40.0" prefWidth="40.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="-Infinity" minWidth="200.0" prefWidth="200.0" />
+            <ColumnConstraints hgrow="NEVER" minWidth="40.0" prefWidth="40.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="-Infinity" minWidth="200.0" prefWidth="200.0" />
+            <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="40.0" prefWidth="40.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints />
+          <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="60.0" prefHeight="60.0" valignment="TOP" vgrow="ALWAYS" />
+            <RowConstraints maxHeight="55.0" minHeight="10.0" prefHeight="55.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="231.0" minHeight="195.0" prefHeight="195.0" vgrow="ALWAYS" />
+        </rowConstraints>
+         <children>
+            <Rectangle id="pole1vis" fx:id="rect1" arcHeight="5.0" arcWidth="5.0" height="231.0" stroke="TRANSPARENT" strokeType="INSIDE" width="10.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <Rectangle id="pole3vis" fx:id="rect2" arcHeight="5.0" arcWidth="5.0" disable="true" height="231.0" stroke="TRANSPARENT" strokeType="INSIDE" width="10.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <Rectangle id="pole2vis" fx:id="rect3" arcHeight="5.0" arcWidth="5.0" disable="true" height="231.0" onMouseClicked="#towerClick" stroke="TRANSPARENT" strokeType="INSIDE" width="10.0" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <Label id="countLabel" fx:id="countLabel" alignment="TOP_RIGHT" prefHeight="77.0" prefWidth="200.0" text="Move count: 0" textFill="WHITE" GridPane.columnIndex="5" GridPane.rowIndex="2">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <VBox id="pole1" fx:id="pole1" alignment="BOTTOM_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#towerClick" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="BOTTOM">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></VBox>
+            <VBox id="pole2" fx:id="pole2" alignment="BOTTOM_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#towerClick" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="BOTTOM" />
+            <VBox id="pole3" fx:id="pole3" alignment="BOTTOM_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#towerClick" prefWidth="186.0" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="BOTTOM" />
+         </children>
+      </GridPane>
+      <GridPane id="panel1" fx:id="panel2" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="NEVER" maxWidth="65.0" minWidth="65.0" prefWidth="65.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="125.0" minWidth="110.0" prefWidth="125.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="60.0" minWidth="60.0" prefWidth="60.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="75.0" minWidth="75.0" prefWidth="75.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="110.0" minWidth="110.0" prefWidth="110.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="75.0" minWidth="75.0" prefWidth="75.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="110.0" minWidth="110.0" prefWidth="110.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="75.0" minWidth="75.0" prefWidth="75.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="66.0" minWidth="65.0" prefWidth="66.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="NEVER" />
+         </rowConstraints>
+         <children>
+             <ChoiceBox id="cb" fx:id="choicebox" onAction="#restart" prefHeight="27.0" prefWidth="144.0" GridPane.columnIndex="2">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="3" />
+                    <String fx:value="4" />
+                    <String fx:value="5" />
+                    <String fx:value="6" />
+                    <String fx:value="7" />
+                    <String fx:value="8" />
+                </FXCollections>
+            </items>
+            <value>
+       			<String fx:value="3" />
+   			</value>
+            </ChoiceBox>
+            <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="79.0" prefWidth="80.0" text="Bricks: " textAlignment="RIGHT" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="RIGHT">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#restart" prefHeight="27.0" prefWidth="123.0" text="Restart Game" GridPane.columnIndex="4" />
+            <Button fx:id="undo" mnemonicParsing="false" onAction="#undoMove" prefHeight="27.0" prefWidth="124.0" text="Undo Move" GridPane.columnIndex="6" />
+         </children>
+      </GridPane>
+      <GridPane id="panel2" fx:id="panel1" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" VBox.vgrow="NEVER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="NEVER" minWidth="40.0" prefWidth="40.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="-Infinity" minWidth="200.0" prefWidth="200.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="-Infinity" minWidth="40.0" prefWidth="40.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="-Infinity" minWidth="200.0" prefWidth="200.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="-Infinity" minWidth="40.0" prefWidth="40.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="-Infinity" minWidth="200.0" prefWidth="200.0" />
+          <ColumnConstraints hgrow="NEVER" maxWidth="-Infinity" minWidth="40.0" prefWidth="30.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="50.0" prefHeight="50.0" vgrow="NEVER" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="t1b" mnemonicParsing="false" onAction="#buttonClick" prefHeight="35.0" prefWidth="80.0" text="Tower 1" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <Button fx:id="t2b" mnemonicParsing="false" onAction="#buttonClick" prefHeight="35.0" prefWidth="80.0" text="Tower 2" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <Button fx:id="t3b" mnemonicParsing="false" onAction="#buttonClick" prefHeight="35.0" prefWidth="80.0" text="Tower 3" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+         </children>
+      </GridPane>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</VBox>
