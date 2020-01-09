@@ -20,7 +20,7 @@ There are three ways to move blocks: via buttons, towers, block drag-and-drops
 1. Click the Tower that the Block you want to move is attached to.
 2. Click the Tower that you want to move the block to.
 
-#### 3. BN
+#### 3. Blocks (Drag-and-Drop)
 1. Click and drag the Block that you want to move.
 2. Release your the Block near the tower you want to move it to.
 
